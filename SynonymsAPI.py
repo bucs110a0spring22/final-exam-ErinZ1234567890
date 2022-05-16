@@ -13,7 +13,7 @@ class SynonymsAPI:
   Takes in a word and the stitches into the dictionary API url.
   """
   def __init__(self,word="good"):
-    self.url = f'https://api.dictionaryapi.dev/api/v2/entries/en/{word}'
+    self.api_url = f'https://api.dictionaryapi.dev/api/v2/entries/en/{word}'
     self.word = word
 
 
@@ -21,7 +21,7 @@ class SynonymsAPI:
   Takes the word passed into the constructor and returns a random synonym. If there are no synonyms in the dictionary, then it just returns the original word.
   """
   def get(self):
-    r = requests.get(self.url)
+    r = requests.get(self.api_url)
     response = r.json()
 
     #this if statement catches if it's a weird word that has limited information in it. ex: sometimes a word will only have information about its pronunciation.__doc__

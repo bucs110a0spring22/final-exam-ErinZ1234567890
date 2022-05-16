@@ -11,17 +11,19 @@ _Replace anything surrounded by the `< >` symbols._
 Please make sure you have completed the soot survey at:
     [soot.binghamton.edu](https://soot.binghamton.edu)
 
-Please list the urls for the APIs you used:
+Please list the urls for the APIs you used: http://www.penguinrandomhouse.biz/webservices/rest/
+https://dictionaryapi.dev/ 
 
-Summary of Program:
+Summary of Program: This code takes in a penguin random house isbn (13 digits, no hyphens) and prints out the title. It then generates a new title using synonyms for all the words in the title.
 
 Most Challenging topic in the course:
+The most challenging topic was definitely the API section. I had never really worked with APIs in python so I was very confused until I got it. And then, since python is awesome, it became a whole lot easier. Also, while trying to do this exam, I spent a very long time setting up x2go and xquartz. 
 
 ## KNOWN BUGS AND INCOMPLETE PARTS:
- < What parts of the project you were not able to complete >
+None
 
 ## REFERENCES:
- < List any outside resources used >
+StackOverflow for all of my errors with json()
 
 ## MISCELLANEOUS COMMENTS:
- < Anything you would like the grader to know >
+None

@@ -11,14 +11,14 @@ class BookAPI:
   Parameter takes in a isbn number and then stitches it into the Penguin House API url. This url will then be used in the get() method.
   """
   def __init__(self, isbn=9780147514011):
-    self.url = f'https://reststop.randomhouse.com/resources/titles/{isbn}/'
+    self.api_url = f'https://reststop.randomhouse.com/resources/titles/{isbn}/'
 
   """
   takes the url passed in to get the XML response from the Penguin Publishing API. It then converts that into a string and finds the title of the book amongst the information. It then returns the title of the book as a string.
   """
   def get(self):
     
-    r = requests.get(self.url)
+    r = requests.get(self.api_url)
     response = r.content
 
     #converts the xml response into a string and then finds the indices that the title starts and ends at.
